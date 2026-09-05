@@ -4,7 +4,7 @@ import os, sys, subprocess, tempfile, shutil, pathlib
 from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-OUT = ROOT / '_shots'; OUT.mkdir(exist_ok=True)
+OUT = ROOT / os.environ.get('SHOT_OUT', '_shots'); OUT.mkdir(exist_ok=True)
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 BASE = os.environ.get('SHOT_BASE', 'http://localhost:5199')
 pages = sys.argv[1:] or [p.stem for p in sorted((ROOT / 'src' / 'pages').glob('*.html'))]

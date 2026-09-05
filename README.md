@@ -3,7 +3,7 @@
 Static multi-page site (HTML + CSS + vanilla JS) built from the "template 2" dark mockups. Same pages, copy and behaviour as Version A (https://github.com/Draoz4/covexall-site) with the dark palette applied.
 
 Pages: index, products, pocket-hand-sanitizer, daily-defense-hand-sanitizer, family-size-hand-sanitizer,
-how-it-works, where-its-used, proof, about, contact, faq (11 pages — one per dark mockup).
+how-it-works, where-its-used, proof, about, contact, education, faq — the same twelve pages as Version A.
 
 - `src/pages/*.html` — page content (edit these). Front-matter comment sets title / description / active nav.
 - `src/partials/*.html` — header, footer, cart drawer, chat, and reusable sections (`{{include:name}}`)
