@@ -1,0 +1,9 @@
+_*.png
+_*.jpg
+_shots/
+.vercel
+node_modules
+.DS_Store
+Thumbs.db
+assets/gen/
+_old/

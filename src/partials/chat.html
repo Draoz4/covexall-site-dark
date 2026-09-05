@@ -1,0 +1,16 @@
+<button id="cx-toggle" aria-label="Chat with Cove" aria-expanded="false">
+  <img src="assets/cove-bust.webp" alt="">
+  <span class="cx-label">Ask Cove</span>
+</button>
+<section id="cx-window" aria-label="Chat with Cove" hidden>
+  <header id="cx-header">
+    <img src="assets/cove-bust.webp" alt="">
+    <div><h2>Ask Cove</h2><p>Your Covexall guide</p></div>
+    <button id="cx-close" aria-label="Close chat">✕</button>
+  </header>
+  <div id="cx-messages"></div>
+  <form id="cx-form">
+    <textarea id="cx-input" rows="1" placeholder="Ask about protection, sizes, ingredients…" autocomplete="off"></textarea>
+    <button id="cx-send" type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></button>
+  </form>
+</section>

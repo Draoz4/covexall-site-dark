@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products — Covexall</title>
+  <meta name="description" content="Trusted, alcohol-free hand sanitizers for every adventure, every day.">
+  <meta property="og:title" content="All Products — Covexall">
+  <meta property="og:description" content="Trusted, alcohol-free hand sanitizers for every adventure, every day.">
+  <meta property="og:image" content="assets/cove-bust.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="">
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="/" aria-label="Covexall home">COVEXALL</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a data-nav="products" class="active" href="/products">Products</a></li>
+      <li><a data-nav="how" href="/how-it-works">How It Works</a></li>
+      <li><a data-nav="where" href="/where-its-used">Where It's Used</a></li>
+      <li><a data-nav="proof" href="/proof">Proof</a></li>
+      <li><a data-nav="about" href="/about">About Us</a></li>
+      <li class="nav-more"><a data-nav="faq" href="/faq">FAQ</a></li>
+      <li class="nav-more"><a data-nav="contact" href="/contact">Contact Us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="icon-btn" data-link="account" href="#" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </a>
+      <button class="icon-btn cart-btn" type="button" aria-label="Open cart" data-cart-open>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="page-hero">
+  <img class="ph-art" src="assets/mk/hero-products.webp" alt="">
+  <div class="ph-fade"></div>
+  <div class="container">
+    <div class="ph-copy reveal">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><span>Products</span></nav>
+      <h1>All Products</h1>
+      <p class="lead">Trusted, alcohol-free hand sanitizers for every adventure, every day.</p>
+    </div>
+  </div>
+</section>
+<div class="container chips-wrap">
+  <ul class="chips reveal">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3c-4 5.5-7 9-7 12.5A7 7 0 0 0 19 15.5C19 12 16 8.5 12 3z"/></svg>Water-based</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>Alcohol-free</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 3C13 4 8 9 4 21c12-4 17-9 17-18z"/></svg>Non-irritating</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><circle cx="12" cy="12" r="2.5"/></svg>Kills 99.9% on contact</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Up to four hours<br>of protection</li>
+  </ul>
+</div>
+
+<section class="section">
+  <div class="container shop">
+    <aside class="filters reveal">
+      <p class="filters-title">Shop by</p>
+      <h4>Category</h4>
+      <ul class="filter-cats" data-filter-cats>
+        <li><button type="button" class="active" data-cat="all">All Products</button></li>
+        <li><button type="button" data-cat="pocket">Pocket Size</button></li>
+        <li><button type="button" data-cat="daily">Daily Defense</button></li>
+        <li><button type="button" data-cat="family">Family Size</button></li>
+        <li><button type="button" data-cat="bundle">Bundles &amp; Kits</button></li>
+      </ul>
+      <h4>Size</h4>
+      <ul class="filter-checks">
+        <li><label><input type="checkbox" data-size="pocket">50ml &amp; Under</label></li>
+        <li><label><input type="checkbox" data-size="daily">51ml – 250ml</label></li>
+        <li><label><input type="checkbox" data-size="family">251ml – 600ml</label></li>
+        <li><label><input type="checkbox" data-size="bulk">600ml &amp; Above</label></li>
+      </ul>
+      <h4>Features</h4>
+      <ul class="filter-checks">
+        <li><label><input type="checkbox">Fragrance-Free</label></li>
+        <li><label><input type="checkbox">Dye-Free</label></li>
+        <li><label><input type="checkbox">Hypoallergenic</label></li>
+        <li><label><input type="checkbox">Fast Drying</label></li>
+      </ul>
+    </aside>
+    <div class="shop-main">
+      <div class="shop-head reveal">
+        <p data-shop-count>Showing 3 of 3 products</p>
+        <label class="sort"><select data-sort><option value="featured">Sort by: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></label>
+      </div>
+      <div class="pgrid" data-pgrid>
+        <article class="pcard reveal" data-cat="pocket" data-price="3.99">
+          <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
+          <a class="pcard-img" href="/pocket-hand-sanitizer"><img src="assets/mk/card-pocket.webp" alt="Covexall Pocket Hand Sanitizer"></a>
+          <h3><a href="/pocket-hand-sanitizer">Covexall Pocket Hand Sanitizer</a></h3>
+          <p class="size">50ml</p>
+          <p class="price">$3.99</p>
+          <div class="pcard-buy">
+            <div class="qty" data-qty><button type="button" data-minus aria-label="Decrease">−</button><input type="number" min="1" value="1" aria-label="Quantity"><button type="button" data-plus aria-label="Increase">+</button></div>
+            <button class="btn btn-primary btn-sm" type="button" data-add="pocket">Add to Cart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></button>
+          </div>
+        </article>
+        <article class="pcard reveal" data-cat="daily" data-price="7.99">
+          <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
+          <a class="pcard-img" href="/daily-defense-hand-sanitizer"><img src="assets/mk/card-daily.webp" alt="Covexall Daily Defense Hand Sanitizer"></a>
+          <h3><a href="/daily-defense-hand-sanitizer">Covexall Daily Defense Hand Sanitizer</a></h3>
+          <p class="size">250ml</p>
+          <p class="price">$7.99</p>
+          <div class="pcard-buy">
+            <div class="qty" data-qty><button type="button" data-minus aria-label="Decrease">−</button><input type="number" min="1" value="1" aria-label="Quantity"><button type="button" data-plus aria-label="Increase">+</button></div>
+            <button class="btn btn-primary btn-sm" type="button" data-add="daily">Add to Cart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></button>
+          </div>
+        </article>
+        <article class="pcard reveal" data-cat="family" data-price="11.99">
+          <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
+          <a class="pcard-img" href="/family-size-hand-sanitizer"><img src="assets/mk/card-family.webp" alt="Covexall Family Size Hand Sanitizer"></a>
+          <h3><a href="/family-size-hand-sanitizer">Covexall Family Size Hand Sanitizer</a></h3>
+          <p class="size">500ml</p>
+          <p class="price">$11.99</p>
+          <div class="pcard-buy">
+            <div class="qty" data-qty><button type="button" data-minus aria-label="Decrease">−</button><input type="number" min="1" value="1" aria-label="Quantity"><button type="button" data-plus aria-label="Increase">+</button></div>
+            <button class="btn btn-primary btn-sm" type="button" data-add="family">Add to Cart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></button>
+          </div>
+        </article>
+        <article class="pcard reveal" data-cat="bundle" data-price="19.99" id="bundles">
+          <button class="wish" type="button" aria-label="Add to wishlist" data-wish>♡</button>
+          <a class="pcard-img" href="#bundles"><img src="assets/mk/cat-bundle.webp" alt="Covexall Protection Bundle"></a>
+          <h3>Covexall Protection Bundle</h3>
+          <p class="size">Pocket + Daily Defense + Family Size</p>
+          <p class="price">$19.99 <s>$23.97</s></p>
+          <div class="pcard-buy">
+            <div class="qty" data-qty><button type="button" data-minus aria-label="Decrease">−</button><input type="number" min="1" value="1" aria-label="Quantity"><button type="button" data-plus aria-label="Increase">+</button></div>
+            <button class="btn btn-primary btn-sm" type="button" data-add="bundle">Add to Cart <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></button>
+          </div>
+        </article>
+      </div>
+      <p class="shop-none" data-shop-none hidden>No products match those filters yet.</p>
+    </div>
+  </div>
+  <div class="container"><div class="shipping-note reveal">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+  <p><strong>Free shipping on orders over $25</strong><br>Fast, reliable delivery right to your door.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <ul class="cats">
+      <li class="cat reveal"><h3>Pocket Size</h3><p>Perfect for on-the-go protection anywhere.</p><img src="assets/mk/cat-pocket.webp" alt=""><a class="cat-link" href="/pocket-hand-sanitizer">Shop Pocket Size <span>&rarr;</span></a></li>
+      <li class="cat reveal"><h3>Daily Defense</h3><p>Long-lasting protection for everyday life.</p><img src="assets/mk/cat-daily.webp" alt=""><a class="cat-link" href="/daily-defense-hand-sanitizer">Shop Daily Defense <span>&rarr;</span></a></li>
+      <li class="cat reveal"><h3>Family Size</h3><p>Big bottle, big value for the whole family.</p><img src="assets/mk/cat-family.webp" alt=""><a class="cat-link" href="/family-size-hand-sanitizer">Shop Family Size <span>&rarr;</span></a></li>
+      <li class="cat reveal"><h3>Bundles &amp; Kits</h3><p>Better together. Save more.</p><img src="assets/mk/cat-bundle.webp" alt=""><a class="cat-link" href="#bundles" data-cat-jump="bundle">Shop Bundles <span>&rarr;</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section why-sec">
+  <div class="container panel">
+    <h2 class="section-title reveal">Why Families Love <span class="blue">Covexall</span></h2>
+    <ul class="icon-cards">
+      <li class="reveal"><img src="assets/mk/why-1.webp" alt=""><h3>Reliable Protection</h3><p>Kills 99.9% on contact.</p></li>
+      <li class="reveal"><img src="assets/mk/why-2.webp" alt=""><h3>Long-Lasting Defense</h3><p>Up to four hours of protection per application.</p></li>
+      <li class="reveal"><img src="assets/mk/why-3.webp" alt=""><h3>Gentle &amp; Safe</h3><p>Water-based, alcohol-free, and non-irritating.</p></li>
+      <li class="reveal"><img src="assets/mk/why-4.webp" alt=""><h3>For Everyone</h3><p>Made for all ages and skin types.</p></li>
+      <li class="reveal"><img src="assets/mk/why-5.webp" alt=""><h3>Everyday Ready</h3><p>Perfect for school, work, travel, and more.</p></li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container panel reveal">
+    <ul class="proof-list">
+  <li><img src="assets/mk/proof-kills.webp" alt=""><span>Kills 99.9%<br>on contact.</span></li>
+  <li><img src="assets/mk/proof-clock.webp" alt=""><span>Up to four hours of protection per application.<sup>*</sup></span></li>
+  <li><img src="assets/mk/proof-water.webp" alt=""><span>Water-<br>based.</span></li>
+  <li><img src="assets/mk/proof-leaf.webp" alt=""><span>Alcohol-<br>free.</span></li>
+  <li><img src="assets/mk/proof-feather.webp" alt=""><span>Non-<br>irritating.</span></li>
+  <li><img src="assets/mk/proof-shield.webp" alt=""><span>Effective against COVID-19, MRSA, C. diff, E. coli.</span></li>
+</ul>
+
+    <p class="proof-foot"><sup>*</sup>On-contact kill verified in independent laboratory testing at 60 seconds across 11 bacterial species. Up to four-hour residual protection verified for SARS-CoV-2 and S. aureus in BSL-3 laboratory testing; additional pathogens pending four-hour testing.</p>
+
+  </div>
+</section>
+
+<section class="section loved-sec">
+  <div class="container">
+    <h2 class="loved-title reveal">Loved by families. Trusted by millions.</h2>
+    <ul class="loved-photos reveal">
+      <li><img src="assets/mk/fam-1.webp" alt="Boy holding Covexall"><span class="stars">★★★★★</span><p>“Perfect size for my son's backpack!”</p><b>– Jessica L.</b></li>
+      <li><img src="assets/mk/fam-2.webp" alt="Woman at the gym"><span class="stars">★★★★★</span><p>“Gentle on my skin and fragrance-free.”</p><b>– Maria S.</b></li>
+      <li><img src="assets/mk/fam-3.webp" alt="Nurse"><span class="stars">★★★★★</span><p>“Great for the gym and everyday use.”</p><b>– David R.</b></li>
+      <li><img src="assets/mk/fam-4.webp" alt="Family"><span class="stars">★★★★★</span><p>“Keeps our family protected every day.”</p><b>– Amanda T.</b></li>
+      <li><img src="assets/mk/fam-5.webp" alt="Girl"><span class="stars">★★★★★</span><p>“I keep one in my classroom always.”</p><b>– Mrs. K.</b></li>
+      <li><img src="assets/mk/fam-6.webp" alt="Couple"><span class="stars">★★★★★</span><p>“Our go-to for peace of mind.”</p><b>– Linda &amp; Mark</b></li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 class="h-left reveal">Frequently Asked Questions</h2>
+    <div class="faq-2col answers reveal">
+      <details><summary>How long does protection last?<small>Up to four hours of protection per application.</small></summary><p>Covexall forms a microscopic shield that bonds to your skin and keeps working after it dries. Reapply after washing hands or after four hours.</p></details>
+      <details><summary>What does “kills 99.9% on contact” mean?<small>It means Covexall kills 99.9% of germs on hands and surfaces in seconds.</small></summary><p>In independent laboratory testing, Covexall achieved a complete kill of 11 bacterial species within 60 seconds.</p></details>
+      <details><summary>Is Covexall safe for kids?<small>Yes! It's water-based, alcohol-free, and non-irritating—made for all ages.</small></summary><p>Keep out of eyes and mouth, as with any hand product.</p></details>
+      <details><summary>Can I use it on sensitive skin?<small>Yes. Covexall is non-irritating and gentle on skin.</small></summary><p>No alcohol means no sting, no cracking and no drying, even with frequent use.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container newsletter-inner reveal">
+    <img class="nl-cove" src="assets/mk/nl-cove.webp" alt="" aria-hidden="true">
+    <div class="nl-copy">
+      <h2>Stay Protected. <span>Stay in the Loop.</span></h2>
+      <p>Get tips, new product updates, and special offers—straight to your inbox.</p>
+    </div>
+    <form class="nl-form" data-form="newsletter">
+      <label class="sr-only" for="nl-email">Email address</label>
+      <input id="nl-email" type="email" name="email" placeholder="Enter your email" required>
+      <button class="btn btn-primary" type="submit">Subscribe</button>
+      <p class="nl-small">No spam, ever. Unsubscribe anytime.</p>
+      <p class="nl-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="/">COVEXALL</a>
+      <p>Water-based. Alcohol-free.<br>Protection that stays with you.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook" data-link="facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram" data-link="instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TikTok" data-link="tiktok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.4 2.4 2 4 4.5 4.2v3.4c-1.7 0-3.2-.5-4.5-1.4V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.5a2.6 2.6 0 1 0 1.6 2.4V3H16z"/></svg></a>
+        <a href="#" aria-label="YouTube" data-link="youtube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.5c-.2-1.4-1-2.3-2.4-2.5C17.6 5.7 12 5.7 12 5.7s-5.6 0-7.6.3C3 6.2 2.2 7.1 2 8.5c-.3 2-.3 3.5-.3 3.5s0 1.5.3 3.5c.2 1.4 1 2.3 2.4 2.5 2 .3 7.6.3 7.6.3s5.6 0 7.6-.3c1.4-.2 2.2-1.1 2.4-2.5.3-2 .3-3.5.3-3.5s0-1.5-.3-3.5zM10 15V9l5 3-5 3z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="/products">All Products</a>
+      <a href="/pocket-hand-sanitizer">Pocket Size</a>
+      <a href="/daily-defense-hand-sanitizer">Daily Defense</a>
+      <a href="/family-size-hand-sanitizer">Family Size</a>
+      <a href="/products#bundles">Bundles &amp; Kits</a>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <a href="/how-it-works">How It Works</a>
+      <a href="/where-its-used">Where It's Used</a>
+      <a href="/proof">Proof</a>
+      <a href="/faq">FAQs</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about">About Us</a>
+      <a href="/about#mission">Our Promise</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="/contact#topics">Shipping &amp; Returns</a>
+      <a data-link="privacy" href="#">Privacy Policy</a>
+      <a data-link="terms" href="#">Terms of Service</a>
+    </div>
+    <div class="footer-col footer-news">
+      <h4>Stay Protected</h4>
+      <p>Get tips, updates &amp; more.</p>
+      <form class="mini-form" data-form="newsletter">
+        <label class="sr-only" for="ft-email">Email address</label>
+        <input id="ft-email" type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="nl-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <img class="footer-splash" src="assets/mk/footer-splash-lg.webp" alt="" aria-hidden="true">
+  </div>
+  <div class="footer-bottom">
+    <p>© <span data-year></span> COVEXALL. All rights reserved.</p>
+    <nav aria-label="Legal"><a data-link="privacy" href="#">Privacy Policy</a><a data-link="terms" href="#">Terms of Service</a><a href="#top">Accessibility</a></nav>
+  </div>
+</footer>
+
+<div class="cart-backdrop" data-cart-close hidden></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+  <header class="cart-head">
+    <h2>Your Cart <span class="cart-head-count" data-cart-count>0</span></h2>
+    <button class="cart-x" type="button" aria-label="Close cart" data-cart-close>✕</button>
+  </header>
+  <div class="cart-items" data-cart-items></div>
+  <p class="cart-empty" data-cart-empty>Your cart is empty. Cove is standing by.</p>
+  <footer class="cart-foot">
+    <p class="cart-ship" data-cart-ship></p>
+    <div class="cart-total"><span>Subtotal</span><strong data-cart-subtotal>$0.00</strong></div>
+    <a class="btn btn-primary btn-block" data-link="checkout" href="#">Checkout</a>
+    <a class="text-link" href="/products">Continue shopping <span>&rarr;</span></a>
+  </footer>
+</aside>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<button id="cx-toggle" aria-label="Chat with Cove" aria-expanded="false">
+  <img src="assets/cove-bust.webp" alt="">
+  <span class="cx-label">Ask Cove</span>
+</button>
+<section id="cx-window" aria-label="Chat with Cove" hidden>
+  <header id="cx-header">
+    <img src="assets/cove-bust.webp" alt="">
+    <div><h2>Ask Cove</h2><p>Your Covexall guide</p></div>
+    <button id="cx-close" aria-label="Close chat">✕</button>
+  </header>
+  <div id="cx-messages"></div>
+  <form id="cx-form">
+    <textarea id="cx-input" rows="1" placeholder="Ask about protection, sizes, ingredients…" autocomplete="off"></textarea>
+    <button id="cx-send" type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></button>
+  </form>
+</section>
+
+<script src="main.js" defer></script>
+</body>
+</html>
