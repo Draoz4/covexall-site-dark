@@ -68,6 +68,8 @@ if (location.search.includes('noanim')) {
     entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
   reveals.forEach((el, i) => { el.style.setProperty('--d', `${(i % 4) * 70}ms`); io.observe(el); });
+  // safety net: never leave a section invisible (full-page captures, odd scroll containers)
+  setTimeout(() => reveals.forEach((el) => el.classList.add('in')), 1800);
 } else {
   reveals.forEach((el) => el.classList.add('in'));
 }
